@@ -1,0 +1,103 @@
+body{
+    overflow: hidden;
+    margin: 0;
+  }
+  h1{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform:translateY(-50%);
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 40px;
+    color: #c70012; 
+    padding: 0 20px;
+  }
+  @media (min-width:1200px){
+    h1{
+      font-size: 60px;
+    }
+  }
+
+
+
+
+
+
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color:bisque;
+  }
+  
+  h1 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 7em;
+    font-weight: 50px;
+    text-align: center;
+    margin-top: 2em;
+    font-weight: 600;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform:translateY(-200%);
+    
+  }
+  
+  h1 span {
+    display: inline-block;
+  }
+  
+  h1 span span{
+    display: inline-block;
+    width: auto;
+    margin-right: -0.3em;
+    animation: animate-characters 0.75s var(--index) forwards;
+    animation-duration: 4s ;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    position: relative;
+  }
+  
+  @keyframes animate-characters {
+    0% {
+      bottom: -0.7em;
+      opacity: 1;
+      color:azure;
+    }
+    
+    50% {
+      bottom: 0.7em;
+      color:tomato;
+    }
+  
+    100% {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  audio {
+    
+    position: absolute;
+    top: 105%;
+    right: 44%;
+    animation: fadein ease 5s;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+    
+  }
