@@ -228,7 +228,7 @@ button#activate.pushed {
 }
 
 div#panel:before {
-	content: "DO YOU LOVE ME";
+	content: "DO YOU LOVE ME?";
 	top: 3vmin;
 	position: relative;
 	font-size: 8vmin;
